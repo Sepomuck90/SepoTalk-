@@ -2,9 +2,6 @@ workflows:
   android-workflow:
     name: Android Debug APK
     instance_type: mac_mini_m1
-    environment:
-      android_signing:
-        - debug  # Nutzt den Standard Debug Keystore
     scripts:
       - name: Make gradlew executable
         script: chmod +x ./gradlew
